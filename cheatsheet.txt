@@ -1,0 +1,26 @@
+
+$ git push -f origin master  # overwrite existing remote repo, need github token
+github token for git command line usage
+7ea7c8dddc2f86e6138d9bd4bc55e7b4700bc837
+
+$ git init project1
+$ cd project1
+create file1.txt
+$ git add file1.txt # means stage file1.txt
+$ git commit -m"my first commit" 
+$ git log # view commit history 
+
+
+$ git remote add origin https://github.com/fan-bingbing/exp.git  # import exsiting local repo to remote empty repo
+$ git push -u origin master  
+
+$ git add . # take snapshot of whole project
+$ git commit -m"first snapshot"
+
+
+
+$ git reset --hard 8e914dbcbe6dc50389060cae17e5833b0bc0ad2f # revert back to first snapshot of the project in local repo
+                                                            # BE AWARE it will lost current snapshot!
+HEAD is now at 8e914db first snapshot
+$ git push -f origin master # push change to remote repo
+
